@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio inputs y forms</title>
+</head>
+<body>
+    
+    <h1>Formulario de Viaje</h1>
+    <p>A continuación te solicitamos los datos necesarios para reservar tu viaje</p>
+    <br>
+
+    <h2>Datos personales</h2>
+<form>
+Fecha de nacimiento:
+<input type="date" name="birthday"><!--Un control para introducir una fecha (año, mes y día, sin tiempo). Abre una selección de fecha  el año, mes, día, cuando está activa en los navegadores compatibles.-->
+</form>
+<br>
+
+<br>
+<form>
+<input type="radio" name="gender" value="male" checked> Hombre<br>
+<input type="radio" name="gender" value="female"> Mujer<br>
+<input type="radio" name="gender" value="other"> Otro
+</form><!--Un botón de opción, que permite seleccionar un único valor entre varias opciones con el mismo valor de nombre.-->
+<br>
+
+<form action="/action_page.php">
+    Nombre:<br>
+    <input type="text" name="firstname"><br>
+    Apellidos:<br>
+    <input type="text" name="lastname"><br><br>
+    <input type="submit" value="Enviar">
+</form><!--Un botón que envía el formulario.-->
+<br>
+
+<form>
+    Teléfono:
+    <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</form> <!--Un control para introducir un número de teléfono. Muestra un teclado telefónico en algunos dispositivos con teclados dinámicos.-->
+    <br>
+
+    <form>
+        Correo electrónico:
+        <input type="email" name="email">
+        </form><!--Un campo para editar una dirección de correo electrónico. Parece una entrada de texto, pero tiene parámetros de validación y teclado relevante para admitir navegadores y dispositivos con teclados dinámicos.-->
+        <br>
+
+    <h2>Datos del hospedaje</h2>
+
+    <form>
+
+        Día de entrada:
+        <input type="date" name="dentrada" min="2023-02-02"><br>
+        Día de salida:
+        <input type="date" name="dsalida" max="2023-02-02"><br>
+        </form><!--Se puede añadir los atributos min y max para restringir la selección.-->
+        <br>
+
+        <br>
+        <form>
+            Personas que viajan <br>
+            1 - 10
+            <input type="range" name="points" min="1" max="10">
+            </form><!--Proporciona un slider para seleccionar un valor numérico entre dos valores (por defecto de 0 a 100)-->
+            <br>
+        
+            <br>
+            <input type="checkbox" name="Niños" value="niños"> ¿Viajan niños?
+            </form><!--Una casilla de verificación que permite seleccionar/deseleccionar valores individuales.-->
+            <br>
+
+<style>
+    form {
+     /* Centrar el formulario en la página */
+    margin: 0 auto;
+    width: 400px;
+    /* Esquema del formulario */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    }
+    
+    ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    
+    form li + li {
+    margin-top: 1em;
+    }
+    
+    label {
+    /* Tamaño y alineación uniforme */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    }
+    
+    input,
+    textarea {
+    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+         Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+    font: 1em sans-serif;
+    
+    /* Tamaño uniforme del campo de texto */
+    width: 300px;
+    box-sizing: border-box;
+    
+    /* Hacer coincidir los bordes del campo del formulario */
+    border: 1px solid #999;
+    }
+    
+    input:focus,
+    textarea:focus {
+    /* Destacado adicional para elementos que tienen el cursor */
+    border-color: #000;
+    }
+    
+    textarea {
+    /* Alinear los campos de texto multilínea con sus etiquetas */
+    vertical-align: top;
+    
+    /* Proporcionar espacio para escribir texto */
+    height: 5em;
+    }
+    
+    .button {
+    /* Alinear los botones con los campos de texto */
+    padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+    }
+    
+    button {
+    /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+         entre las etiquetas y sus campos de texto */
+    margin-left: .5em;
+    }
+    
+    </style>
+
+</body>
+</html>
