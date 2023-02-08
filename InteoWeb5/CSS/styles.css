@@ -9,7 +9,7 @@ body {
 /*HEADER*/
 h1{
     text-transform: uppercase;
-
+/* The text-transform CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized. It also can help improve legibility for ruby. */
 }
 
 h1 span{
@@ -22,7 +22,8 @@ h1 span{
     border-bottom-width: 5px;
     border-bottom-style: double;
 }
-
+/*The text-align CSS property sets the horizontal alignment of the inline-level content inside a block element or table-cell box. This means it works like vertical-align but in the horizontal direction.*/
+/*The border-bottom shorthand CSS property sets an element's bottom border. It sets the values of border-bottom-width, border-bottom-style and border-bottom-color.*/
 #photo img{
     background-color: cornflowerblue;
     width: 160px;
@@ -56,5 +57,163 @@ h1 span{
     font-size: 10px;
     text-decoration: none;
     display: block;
-    padding: 3px;
+    padding: 5px;
 }
+/* La propiedad position de CSS especifica como un elemento es posicionado en eld ocumento. Las propiedades top, right, bottom y left determinan la ubicación final de los elemntos posicionados */
+.menu ul li ul{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    list-style-type: none;
+    display: none;
+    height: auto;
+}
+/*The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.*/
+.menu ul li:hover ul{
+    display: block;
+
+}
+.menu ul li ul li{
+    display: block;
+    width: 60px;
+    height: 20px;
+    margin: 0;
+    text-align: left;
+}
+/*The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.*/
+
+/* Fin del header  */
+h2{
+    color: #f0563d;
+    text-transform: uppercase;
+}
+h2::before{
+    content: "// ";
+}
+
+section{
+    display: flex;
+    front-size: 18px;
+}
+
+h3{
+    color: black;
+    padding-bottom: 5px;
+    text-transform: bold;
+}
+p{
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+.section{
+    display: flex;
+    line-height: 1;
+    content: "/";
+}
+.pull-left{
+    float: left;
+}
+.row{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.col-60{
+    width: 60%;
+}
+
+.col-10{
+    width: 10%;
+}
+
+.col-40{
+    width: 40%;
+}
+
+.col-90{
+    width: 90%;
+}
+.education ul{
+    list-style: none;
+    margin:0;
+    padding: 0; 
+}
+    .education .year {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    
+    .education .description {
+        background: #EEEEEE;
+        border-bottom: 1px solid #DDDDDD;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        box-sizing: border-box; 
+    }
+
+    .education .description h3, .education .description p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .education .description p::after {
+        content: "";
+        position: absolute;
+        border: 8px solid transparent ;
+        border-right: 8px solid #EEEEEE ;
+        top: 5px;
+        left: -16px;
+    }
+
+    .where{
+        font-weight: bold;
+    }    
+    .year{
+        font-size: 0.8em;
+        display: flex;
+        width: max-content;
+    }
+
+    .profesion{
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 2em;
+        font-size: 1em;
+        text-align: justify;
+    }
+    .containerskill{
+        width: 100%;
+    }
+    .skills{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .skillcss{
+        width: 60%;
+        background-color: #f0563d;
+        margin: 10px 0px 10px 5px;
+        list-style: none;
+        text-transform: uppercase;
+    }
+    .skilljs{
+        width: 50%;
+        background-color: #f0563d;
+        margin: 10px 0px 10px 5px;
+        list-style: none;
+        text-transform: uppercase;
+    }
+    .skillhtml{
+        width: 80%;
+        background-color: #f0563d;
+        margin: 10px 0px 10px 5px;
+        list-style: none;
+        text-transform: uppercase;
+    }
+    .skillpy{
+        width: 50%;
+        background-color: #f0563d;
+        margin: 10px 0px 10px 5px;
+        list-style: none;
+        text-transform: uppercase;
+    }
