@@ -1,141 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo Bootstrap 2</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo Bootstrap 2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
 <body>
-<header>
+  <header>
     <div class="container-fluid">
-        
-        <nav class="navbar bg-light fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Offcanvas navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+      <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Offcanvas navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
-                  <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../imgs/Ramo_tinto_blanco.jpg" class="d-block w-100 h-75" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../imgs/Ramo_rosa_verde.jpg" class="d-block w-100 h-75" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../imgs/Ramo_blanco.jpg" class="d-block w-100 h-75" alt="...">
+              </div>
+              <div class="carousel-item active">
+                <img src="../imgs/Flores_canasta.jpg" class="d-block w-100 h-75" alt="...">
+              </div>
+              <div class="carousel-item active">
+                <img src="../imgs/Ramo_violeta.jpg" class="d-block w-100 h-75" alt="...">
               </div>
             </div>
-          </nav>
-        
-        </div>
-</header>
-
-
-    <div class="container text-center">
-        <div class="row">
-          <div class="col">
-              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="../imgs/basket-gcb2868397_1920.jpg" class="d-block w-100 h-75" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="../imgs/flower-g5529b3936_1920.jpg" class="d-block w-100 h-75" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="../imgs/flowers-g7039773f0_1920.jpg" class="d-block w-100 h-75" alt="...">
-                    </div>
-                    <div class="carousel-item active">
-                      <img src="../imgs/bouquet-g559801be9_1920.jpg" class="d-block w-100 h-75" alt="...">
-                    </div>
-                    <div class="carousel-item active">
-                      <img src="../imgs/roses-g590b2a836_1920.jpg" class="d-block w-100 h-75" alt="...">
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-          </div>
-
-        </div>
-        <h2>Flores de temporada</h2>
-
-        <div class="row">
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
+<br>
+      <h2>Flores de temporada</h2>
+<br>
+      <div class="row">
+        <div class="col">
+          
+          <div class="card" style="width: 20rem;">
+            <img src="../imgs/Orquídea.jpg" class="card-img-top" alt="..." style="height: 12rem;">
+            <div class="card-body">
+              <h5 class="card-title">Orquídea</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem;">
+            <img src="../imgs/Mokara.jpg" class="card-img-top" alt="..." style="height: 12rem;">
+            <div class="card-body">
+              <h5 class="card-title">Mokara</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem;">
+            <img src="../imgs/Ave_paraísco.jpg" class="card-img-top" alt="..." style="height: 12rem;">
+            <div class="card-body">
+              <h5 class="card-title">Ave de paraíso</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form>
+      <div class="container">
+          <div class="row">
+              <!--Inicio de Sesión-->
+              <div class="card" style="width: 40rem; height: 20rem;">
+                  <div class="card-body">
+                      <h5 class="card-title text-center">Inicio de Sesión</h5>
+                      <div class="col">
+                          <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1"
+                                  aria-describedby="emailHelp">
+                          </div>
+                          <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                          </div>
+                          <div class="text-center">
+                              <button type="submit" class="btn btn-primary">Inicio</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!--Registro-->
+              <div class="card" style="width: 40rem; height: 40rem;">
+                  <div class="card-body">
+                      <h5 class="card-title text-center">Registrate en nuestra comunidad</h5>
+                      <div class="col ">
+                          <form class="row g-3">
+                              <div class="col-md-6">
+                                  <label for="inputEmail4" class="form-label">Email</label>
+                                  <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                              <div class="col-md-6">
+                                  <label for="inputPassword4" class="form-label">Contraseña</label>
+                                  <input type="password" class="form-control" id="inputPassword4">
+                              </div>
+                              <div class="col-12">
+                                  <label for="inputAddress" class="form-label">Dirección</label>
+                                  <input type="text" class="form-control" id="inputAddress"
+                                      placeholder="Calle Numero Exterior">
+                              </div>
+                              <div class="col-12">
+                                  <label for="inputAddress2" class="form-label">Dirección 2</label>
+                                  <input type="text" class="form-control" id="inputAddress2"
+                                      placeholder="Numero Interior">
+                              </div>
+                              <div class="col-md-6">
+                                  <label for="inputCity" class="form-label">Ciudad</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                              </div>
+                              <div class="col-md-4">
+                                  <label for="inputState" class="form-label">Estado</label>
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Elije...</option>
+                                      <option>...</option>
+                                  </select>
+                              </div>
+                              <div class="col-md-2">
+                                  <label for="inputZip" class="form-label">C.P.</label>
+                                  <input type="text" class="form-control" id="inputZip">
+                              </div>
+                              <br>
+                              <div class="col-12">
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                                      <label class="form-check-label" for="gridCheck">
+                                          Acepta terminos y condiciones
+                                      </label>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                      <div class="text-center">
+                          <a href="#" class="btn btn-primary">Registro</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  </form>
+
+
+  </main>
 
 
 
@@ -149,12 +248,13 @@
 
 
 
+  <footer>
+    ©2023 CODOGOS  Política de privacidad Todos los derechos reservados
+  </footer>
 
-
-<footer>
-Derechos reservados
-</footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
