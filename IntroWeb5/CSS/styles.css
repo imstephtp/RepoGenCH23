@@ -217,3 +217,30 @@ p{
         list-style: none;
         text-transform: uppercase;
     }
+
+    /* Termina parte skills */
+
+    .icon-star{
+        background: url(../imgs/star-grey.png)no-repeat;
+        width: 110px;
+        height: 14px;
+        float: right;
+    }
+
+    .icon-star-red{
+        background: url(../imgs/star-red.png)no-repeat;
+        width: 110px;
+        height: 14px;
+        float: left;
+    }
+    .obj-start{
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+
+    .hobby{
+        background: #ba190a;
+        color: #fafafa;
+        padding: 5px;
+        font-size: 0.9em;
+    }
