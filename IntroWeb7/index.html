@@ -1,65 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplos js para la web (INTRO-WEB-7)</title>
-    <script>
-        function saludar(){
-            console.log("Hola mundo JS desde VSCode");
-        }
-        function sumar(v1, v2=10){
-            console.log("esto es una suma: ")
-            return (v1 + v2);
-        }
-    </script>
-    <script>
-        function llamaNombre (nombre){
-        alert("Hola, " + nombre)
-        }
-    </script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejemplos js para la web (INTRO-WEB-7)</title>
+		<script>
+			function saludar() {
+				console.log('Hola mundo JS desde VSCode');
+			}
+			function sumar(v1, v2 = 10) {
+				console.log('esto es una suma: ');
+				return v1 + v2;
+			}
+		</script>
+		<script>
+			function llamaNombre(nombre) {
+				alert('Hola, ' + nombre);
+			}
+		</script>
 
-<script>
-    function multiplicaSalario (salario){
-    }
-</script>
+		<script>
+			function multiplicaSalario(param1, param2) {
+				let pago = v1 * v2;
+				return pago;
+			}
+		</script>
 
-<script>
-    function llamaNombre (nombre){
-    alert("Hola, " + nombre)
-    }
-</script>
+		<script>
+			function llamaNombre(nombre) {
+				alert('Hola, ' + nombre);
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Javascript</h1>
 
-</head>
-<body>
-    <h1>Javascript</h1>
+		<script>
+			saludar();
+			console.log('El resultado es: ' + sumar(3, 20));
+			let nombre = prompt('Cuál es tu nombre: ');
+			let param1 = prompt('Cuál es tu sueldo por hora: ');
+			let horas = prompt('Cuántas horas trabajaste: ');
 
-    <script>
-        saludar();
-    </script>
+			llamaNombre(nombre);
+			let resultado = multiplicaSalario(param1, horas);
+		</script>
+		<!-- 
+		<script>
+			console.log('El resultado es: ' + sumar(3, 20));
+		</script>
 
-    <script>
-        console.log("El resultado es: " + sumar(3, 20));
-    </script>    
+		<script>
+			// let nombre = prompt("Cuál es tu nombre: ");
+			llamaNombre();
+		</script>
 
-    <script>
-        let nombre = prompt("Cuál es tu nombre: ");
-        llamaNombre ();
-    </script>
+		<script>
+			// let nombre = prompt("Cuál es tu sueldo por hora: ");
+			llamaNombre();
+		</script>
 
-<script>
-    let nombre = prompt("Cuál es tu sueldo por hora: ");
-    llamaNombre ();
-</script>
+		<script>
+			// let nombre = prompt("Cuántas horas trabajaste: ");
+			llamaNombre();
+		</script> -->
 
-<script>
-    let nombre = prompt("Cuántas horas trabajaste: ");
-    llamaNombre ();
-</script>
-
-
-
-    <script src="../IntoWeb7/js01/tiposdedatosyvariables.js"></script>
-</body>
+		<!--<script src="../IntoWeb7/js01/tiposdedatosyvariables.js"></script>-->
+	</body>
 </html>
