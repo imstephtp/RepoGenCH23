@@ -1,26 +1,94 @@
 package colecciones;
 
+import java.util.*;
+
 public class misCollection {
 
 	public static void main(String[] args) {
+		
+		misCollection c = new misCollection();
+		
+		
+		//imprimir(c.listasCollections());
+		//imprimir(c.setCollections());
+		//imprimir(c.tsetCollections());
+		//wrapperClass();
+		
+	mapCollections();
+	
+		
+	}//final main string
+	
 
-		wrapperClass();
+	private staqtic void mapCollections() {
+
+		Map miMap = new HashMap();
+		
+		miMap.put("valor1", "Juan");
+		miMap.put("valor2", "Maria");
+		miMap.put("valor3", "Arturo");
+		miMap.put("valor4", "Karla");
+		
+		return miMap;
 		
 	}
 	
-	private void listasCollections() {
-
-		List miLista = new ArrayList();
-		miLista.add(1);
-		miLista.add(2;
-		miLista.add(3);
+	
+	
+	
+	
+	Set setCollections() {
+	Set miSet = new HashSet ();
+	miSet.add("uno");
+	miSet.add("dos");
+	miSet.add("tres");
+	miSet.add("cuatro");
+	miSet.add("cinco");
+	miSet.add("seis");
+	
+			return miSet;
+	}
+	
+	Set tsetCollections() {
+	Set miTSet = new TreeSet();
+	miTSet.add("uno");
+	miTSet.add("dos");
+	miTSet.add("tres");
+	miTSet.add("cuatro");
+	miTSet.add("cinco");
+	miTSet.add("seis");
+	
+			return miTSet;
+			
 	}
 	
 	
-	private void imprimir(Collection collection) {
+	
+	private List listasCollections() {
+
+		List miLista = new ArrayList();
+		System.out.println(miLista + "Tamaño de la lista antes " + miLista.size());
+		System.out.println("está vacía " + miLista.isEmpty());
+		miLista.add("1");
+		miLista.add(2);
+		miLista.add(3);
+		miLista.add(0,"Pato");
+		miLista.set(0, miLista);
+		miLista.remove(2);
+		
+		System.out.println(miLista + "Tamaño de la lista después " + miLista.size());
+		System.out.println("está vacía " + miLista.isEmpty());
+		
+		boolean e = miLista.contains(2);
+		System.out.println("--->" + e);
+		
+		return miLista;
+	}//termina listasCollections
+	
+	public static void imprimir(Collection collection) {
 		// TODO Auto-generated method stub
 		for (Object elementos: collection) {
-			System.out.println();
+			System.out.println("Elementos " + elementos);
 		}
 	}
 	
